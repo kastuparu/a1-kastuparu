@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>CS 4241 Assignment 1</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="hobby.html">Hobby: Networks</a></li>
+            <li><a href="https://www.wpi.edu/" target="_blank">WPI Website</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Computer_network" target="_blank">Networks Wiki</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Katy's Hobby: Computer Networks</h1>
+    </header>
+
+    <main>
+        <section class="two-columns">
+            <p>I started learning about computer networks when I got my first internship at RTX BBN in Cambridge, MA. Since
+                then, I've worked on several projects regarding computer networks. I hope to potentially study networks in
+                graduate school.</p>
+
+            <figure>
+                <img src="rtx-bbn-internship.jpg" alt="RTX BBN internship">
+                <figcaption>RTX BBN interns from summer 2024. I am all the way on the right.</figcaption>
+
+            </figure>
+
+            <h3>Summer 2024</h3>
+            <ul>
+                <li>Built a 5G testbed using srsRAN and Open5GS software, and B205-mini USRPs hardware.</li>
+                <li>Developed a PyQt5 GUI for a cyclostationary signal processing search and discovery algorithm for
+                    displaying signal characteristics. Wrote a logger for a TDoA Matlab application.</li>
+                <li>Studied topology of LEO satellite constellations for understanding link strengths and routing.</li>
+            </ul>
+
+            <h3>Summer 2023</h3>
+            <ul>
+                <li>Explored Internet background radiation (packets addressed to dark networks).</li>
+                <li>Developed software for identifying cohorts of port scanners and anomalies in darkspace traffic.</li>
+                <li>Studied the distributions across autonomous systems and the geolocations of a botnet.</li>
+            </ul>
+
+            <h3>Summer 2022</h3>
+            <ul>
+                <li>Conducted experiments to study the topology of the Internet using distributed systems.</li>
+                <li>Created a Flask web app for managing the distributed systems.</li>
+                <li>Visualized geolocations of traceroute data from the distributed systems.</li>
+            </ul>
+        </section>
+
+        <article class="two-columns">
+            <form>
+                <h2>Networks Quiz</h2>
+                <p>Take the quiz below to test your knowledge about computer networks!</p>
+
+                <p>1. What is the size of a TCP header (in bytes)?</p>
+                <label for="header_min">Minimum size:</label>
+                <input type="text" id="header_min" name="header_min"><br><br>
+                <label for="header_max">Maximum size:</label>
+                <input type="text" id="header_max" name="header_max"><br>
+
+                <p>2. Explain the difference between big-endian and little-endian.</p>
+                <label>
+                    <textarea rows="5" style="width:100%;"></textarea>
+                </label>
+
+                <p>3. Which of the following are a network layer?</p>
+                <input type="checkbox" id="application" name="application" value="Application">
+                <label for="application">Application</label><br>
+                <input type="checkbox" id="transport" name="transport" value="Transport">
+                <label for="transport">Transport</label><br>
+                <input type="checkbox" id="network" name="network" value="Network">
+                <label for="network">Network</label><br>
+                <input type="checkbox" id="link" name="link" value="Link">
+                <label for="link">Link</label>
+
+                <p>4. Which of the following protocols is NOT a transport layer protocol?</p>
+                <input type="radio" id="tcp" name="transport_protocol" value="TCP">
+                <label for="tcp">TCP (Transmission Control Protocol)</label><br>
+                <input type="radio" id="udp" name="transport_protocol" value="UDP">
+                <label for="udp">UDP (User Datagram Protocol)</label><br>
+                <input type="radio" id="icmp" name="transport_protocol" value="ICMP">
+                <label for="icmp">ICMP (Internet Control Message Protocol)</label>
+
+                <p>5. Match the following network command line tools to their definitions.</p>
+                <select name="ping" id="ping">
+                    <option value="default"></option>
+                    <option value="traceroute">traceroute</option>
+                    <option value="ping">ping</option>
+                    <option value="nslookup">nslookup</option>
+                    <option value="nmap">nmap</option>
+                </select>
+                <label for="ping">Sends an ICMP echo request packet to a specified host to test connectivity.</label><br><br>
+                <select name="nslookup" id="nslookup">
+                    <option value="default"></option>
+                    <option value="traceroute">traceroute</option>
+                    <option value="ping">ping</option>
+                    <option value="nslookup">nslookup</option>
+                    <option value="nmap">nmap</option>
+                </select>
+                <label for="nslookup">Queries domain name servers to find DNS information about a specified host.</label><br><br>
+                <select name="traceroute" id="traceroute">
+                    <option value="default"></option>
+                    <option value="traceroute">traceroute</option>
+                    <option value="ping">ping</option>
+                    <option value="nslookup">nslookup</option>
+                    <option value="nmap">nmap</option>
+                </select>
+                <label for="traceroute">Sends TCP SYN packets to each host along a path to a target using incremented TTL values.</label><br><br>
+                <select name="nmap" id="nmap">
+                    <option value="default"></option>
+                    <option value="traceroute">traceroute</option>
+                    <option value="ping">ping</option>
+                    <option value="nslookup">nslookup</option>
+                    <option value="nmap">nmap</option>
+                </select>
+                <label for="nmap">Probes specified ports on specified hosts to see which processes may be running on the hosts.</label><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+
+        </article>
+    </main>
+
+    <footer>
+        <p><a href="mailto:kastuparu@wpi.edu" target="_blank">kastuparu@wpi.edu</a></p>
+        <p><a href="https://github.com/kastuparu" target="_blank">GitHub</a></p>
+        <p><a href="https://www.linkedin.com/in/kastuparu/" target="_blank">LinkedIn</a></p>
+    </footer>
+</body>
+</html>
